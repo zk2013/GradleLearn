@@ -1,0 +1,12 @@
+task helloWorld   {
+   println "Hello World!"
+}
+
+task copyFile(type: Copy) {
+   from 'xml'
+   into 'destination'
+}
+
+task helloZj(dependsOn: helloWorld) {
+   println "Hello helloZj!"
+}
